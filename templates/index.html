@@ -15,7 +15,7 @@
     <div class="container w-50">
         <form action="/predict" method="post">
             <div class="d-flex align-items-center">
-                <input class="form-control me-2" name="texte" type="text" placeholder="Veuillez saisir un texte...">
+                <input class="form-control me-2" name="texte" value="{{texte or ''}}" type="text" placeholder="Veuillez saisir un texte...">
                 <button type="submit" class="btn btn-primary">Prédir</button>
             </div>
             {% if errors %}
